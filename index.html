@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thư Mời Baee</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <section class="game-screen" id="gameScreen">
+        <div class="game-title">💝 Trò Chơi Trước Thư 💝</div>
+        <div class="game-subtitle">Hãy hứng những trái tim rơi xuống!</div>
+        <canvas id="gameCanvas" aria-label="Trò chơi hứng trái tim"></canvas>
+        <div class="game-info">
+          <div class="score-display">
+            Trái tim hứng được: <span id="score">0</span>/10
+          </div>
+          <div class="game-message" id="gameMessage"></div>
+          <div class="game-instruction">
+            Hứng được 10 trái tim để mở lá thư nhé! 💙
+          </div>
+          <div
+            class="letter-envelope"
+            id="letterEnvelope"
+            role="button"
+            tabindex="0"
+            aria-label="Mở thư"
+          >
+            <span class="letter-envelope-back" aria-hidden="true"></span>
+            <span
+              class="letter-envelope-flap letter-envelope-flap-top"
+              aria-hidden="true"
+            ></span>
+            <span
+              class="letter-envelope-flap letter-envelope-flap-bottom"
+              aria-hidden="true"
+            ></span>
+            <span class="letter-envelope-heart" aria-hidden="true">❤</span>
+            <div class="letter-envelope-text">Mở thư</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-content">
+        <div class="container">
+          <article class="letter-card" id="letterCard">
+            <header class="header">
+              <div class="seal">💌</div>
+              <h1 class="header-title">Thư Mời Baee</h1>
+              <p class="header-subtitle">Một sự chân thành muốn gửi đến em</p>
+            </header>
+
+            <div class="divider"></div>
+
+            <div class="content">
+              <div class="greeting">Dearr My Love, Như Quỳnhhhhh 💙</div>
+
+              <div class="letter-text">
+                Chào em nhaaa <span class="heart">♡</span><br /><br />
+                Thì mình cũng đã nói chuyện với nhau được một thời gian dài ùi,
+                và cũng đã đến lúc anh được có một cơ hội tuyệt vời để gặp em
+                trực tiếp. Lá thư này anh viết để có thể chính thức mời em đi
+                cùng anh vào một ngày thật đặc biệt nhé.<br /><br />
+                <strong
+                  >Anh rất mong sẽ có một buổi đi chơi thật vui cùng em, hi vọng
+                  hai đứa sẽ hiểu nhau thêm và cho anh một cơ hội nhé. Anh cảm
+                  ơn embee.</strong
+                >
+              </div>
+
+              <div class="decorative-element">✧ ✧ ✧</div>
+
+              <section class="timeline-section">
+                <h2 class="timeline-title">Lịch Trình Dự Kiến 🗓️</h2>
+                <div class="timeline">
+                  <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                      <div class="timeline-time">14:30 - 17:30</div>
+                      <div class="timeline-event">
+                        Cùng đi workshop trải nghiệm
+                      </div>
+                    </div>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                      <div class="timeline-time">17:30 - 20:30</div>
+                      <div class="timeline-event">Đi ăn món ngon buổi đêm</div>
+                    </div>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                      <div class="timeline-time">Sau 20:30</div>
+                      <div class="timeline-event">
+                        Nếu em muốn, mình có thể đi chụp ptb hong nhỉ
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <div class="decorative-element">✧ ✧ ✧</div>
+
+              <section class="response-section">
+                <div class="response-prompt">Bạn có muốn đồng ý không nào?</div>
+                <div class="response-buttons" id="responseButtons">
+                  <button
+                    class="response-btn yes-btn"
+                    id="yesBtn"
+                    type="button"
+                  >
+                    Có
+                  </button>
+                  <button class="response-btn no-btn" id="noBtn" type="button">
+                    Không
+                  </button>
+                </div>
+                <div class="thanks-message" id="thanksMessage"></div>
+              </section>
+            </div>
+
+            <footer class="signature-section">
+              <div class="date-info">📅 Ngày: <strong>30/4/2026</strong></div>
+              <div class="closing">Chúc em một ngày đầy vui vẻ,</div>
+
+              <div class="signature">
+                <div class="signature-name">From Anh Sang</div>
+                <div class="signature-title">Người gửi thư 💝</div>
+              </div>
+            </footer>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
